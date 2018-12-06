@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  SlowCarefulPriject
+//
+//  Created by teacher on 16-10-17.
+//  Copyright (c) 2016年 teacher. All rights reserved.
+//
+
+#ifndef SlowCarefulPriject_PrefixHeader_pch
+#define SlowCarefulPriject_PrefixHeader_pch
+
+#define  SCREENW [UIScreen mainScreen].bounds.size.width
+#define  SCREENH [UIScreen mainScreen].bounds.size.height
+
+#define is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define StatusBarH (is_iPhoneX ==YES)?44.0f: 20.0f
+
+#define NavBarH (is_iPhoneX==YES)?88.0f: 64.0f
+
+#define TabBarH (is_iPhoneX==YES)?83.0f: 49.0f
+
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+
+#define bgrgb [UIColor colorWithRed:75/255.0 green:166/255.0 blue:233/255.0 alpha:1.0]
+#define fuzhurgb [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1.0]
+
+//服务器地址
+#define httpurl @"http://39.107.252.165:8081"
+
+#define uploadTonken @"heYulmBpbOCjg8drZWAdeCmG3Mb0vPFoDlC_4p8x: NlLbLMG0CVqMwnn7NYHrAk-A8PE=: eyJzY29wZSI6InlpYml2aWRlbyIsImRlYWRsaW5lIjoxNTMzMjg1OTg5fQ=="
+
+#endif

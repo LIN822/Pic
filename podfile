@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'Pic' do
+pod 'AFNetworking'
+pod 'SVProgressHUD' 
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'SDCycleScrollView'
+
+
+
+end
